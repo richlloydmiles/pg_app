@@ -1,6 +1,7 @@
 jQuery(document).ready(function($) {
 	jQuery(document).on('click', '.test', function(event) {
 		jQuery.ajax({
+			cache : false,
 			url: 'http://richmiles.co.za/wp-json/posts/' + jQuery('#id_selection').val(),
 			type: 'GET',
 		})
